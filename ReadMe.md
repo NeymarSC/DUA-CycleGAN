@@ -24,13 +24,12 @@ Traditional encryption methods often struggle with the high-resolution nature of
 
 DUA-CycleGAN
 │
-├── .gitignore                 # Specifies intentionally untracked files to ignore in Git.`
-├── LICENSE                   # The open-source software license (e.g., MIT, GPL).`
-├── README.md                 
-│
-├── checkpoints/              # [Directory] Stores model weights and training logs.`
-│   └── [experiment_name]/    # Folder named after the specific experiment.`
-│       ├── latest.pth        # Latest saved model weights.`
+.gitignore                 # Specifies intentionally untracked files to ignore in Git.`
+ LICENSE                   # The open-source software license (e.g., MIT, GPL).`
+ README.md                 
+   ── checkpoints/              # [Directory] Stores model weights and training logs.`
+   └── [experiment_name]/    # Folder named after the specific experiment.
+      ├── latest.pth        # Latest saved model weights.`
 `│       └── training_logs.txt # Detailed console output and metrics during training.`
 `│`
 `├── data/                    # [Directory] Dataset loading and processing scripts.`
