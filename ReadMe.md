@@ -22,15 +22,15 @@ Traditional encryption methods often struggle with the high-resolution nature of
 
 ## Code Structure
 
-`DUA-CycleGAN/`
-`│`
-`├── .gitignore                 # Specifies intentionally untracked files to ignore in Git.`
-`├── LICENSE                   # The open-source software license (e.g., MIT, GPL).`
-`├── README.md                 
-│`
-`├── checkpoints/              # [Directory] Stores model weights and training logs.`
-`│   └── [experiment_name]/    # Folder named after the specific experiment.`
-`│       ├── latest.pth        # Latest saved model weights.`
+DUA-CycleGAN
+│
+├── .gitignore                 # Specifies intentionally untracked files to ignore in Git.`
+├── LICENSE                   # The open-source software license (e.g., MIT, GPL).`
+├── README.md                 
+│
+├── checkpoints/              # [Directory] Stores model weights and training logs.`
+│   └── [experiment_name]/    # Folder named after the specific experiment.`
+│       ├── latest.pth        # Latest saved model weights.`
 `│       └── training_logs.txt # Detailed console output and metrics during training.`
 `│`
 `├── data/                    # [Directory] Dataset loading and processing scripts.`
@@ -69,8 +69,8 @@ Traditional encryption methods often struggle with the high-resolution nature of
 `│   ├── train.sh            # One-click script to start training with preset parameters.`
 `│   ├── test.sh             # One-click script to run inference on test data.`
 `│   └── conda_deps.sh      # Script to install dependencies via Conda.`
-`│`
-`├── util/                   # [Directory] Helper utilities.`
+ │
+ ├── util/                   # [Directory] Helper utilities.`
 `│   ├── __init__.py`
 `│   ├── html.py             # Generates HTML pages to display training results.`
 `│   ├── image_pool.py       # Implements a history buffer for stabilizing GAN training.`
