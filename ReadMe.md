@@ -30,12 +30,11 @@ DUA-CycleGAN
    ── checkpoints/              # [Directory] Stores model weights and training logs.`
    └── [experiment_name]/    # Folder named after the specific experiment.
       ├── latest.pth        # Latest saved model weights.`
-`│       └── training_logs.txt # Detailed console output and metrics during training.`
-`│`
-`├── data/                    # [Directory] Dataset loading and processing scripts.`
-`│   ├── __init__.py`
-`│   ├── aligned_dataset.py   # Loader for paired datasets (Pix2Pix style).`
-`│   ├── base_dataset.py      # Abstract base class for custom datasets.`
+      └── training_logs.txt # Detailed console output and metrics during training.`
+ ── data/                    # [Directory] Dataset loading and processing scripts.`
+   ├── __init__.py`
+   ├── aligned_dataset.py   # Loader for paired datasets (Pix2Pix style).
+   ├── base_dataset.py      # Abstract base class for custom datasets.`
 `│   ├── image_folder.py      # Utility to traverse image directories.`
 `│   └── unaligned_dataset.py # Loader for unpaired datasets (CycleGAN default).`
 `│`
