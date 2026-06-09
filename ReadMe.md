@@ -83,64 +83,6 @@ DUA-CycleGAN/
 └── environment.yml          # Conda environment configuration file.
 ```
 
-DUA-CycleGAN/
-│
-├── .gitignore                 # Specifies intentionally untracked files to ignore in Git.
-├── LICENSE                   # The open-source software license (e.g., MIT, GPL).
-├── README.md                 
-│
-├── checkpoints/              # [Directory] Stores model weights and training logs.
-│   └── [experiment_name]/    # Folder named after the specific experiment.
-│       ├── latest.pth        # Latest saved model weights.
-│       └── training_logs.txt # Detailed console output and metrics during training.
-│
-├── data/                    # [Directory] Dataset loading and processing scripts.
-│   ├── __init__.py
-│   ├── aligned_dataset.py   # Loader for paired datasets (Pix2Pix style).
-│   ├── base_dataset.py      # Abstract base class for custom datasets.
-│   ├── image_folder.py      # Utility to traverse image directories.
-│   └── unaligned_dataset.py # Loader for unpaired datasets (CycleGAN default).
-│
-├── datasets/                # [Directory] Raw data storage.
-
-├── trainA/         # Original chest X-rays
-     ├── trainB/         # Noise domain samples (or dummy images)
-     ├── testA/
-     └── testB/
-
-│   ├── bibtex/              # Example dataset folder.
-│   └── download_cyclegan_dataset.sh # Script to download standard datasets.
-│
-├── docs/                   # [Directory] Extended documentation and guides.
-│   ├── overview.md          # High-level project architecture explanation.
-│   └── datasets.md         # Detailed guide on how to prepare datasets.
-│
-├── models/                 # [Directory] Core model definitions and logic.
-│   ├── __init__.py
-│   ├── base_model.py       # Abstract base class for all models (defines interfaces).
-│   ├── cycle_gan_model.py  # Implements CycleGAN logic (generators, discriminators, losses).
-│   └── networks.py         # Defines network architectures (ResNet/UNet, CBAM modules).
-│
-├── options/                # [Directory] Command-line argument configurations.
-│   ├── base_options.py     # Basic arguments shared by training and testing.
-│   ├── train_options.py    # Arguments specific to the training phase.
-│   └── test_options.py    # Arguments specific to the testing/inference phase.
-│
-├── scripts/                # [Directory] Shell scripts for quick execution.
-│   ├── train.sh            # One-click script to start training with preset parameters.
-│   ├── test.sh             # One-click script to run inference on test data.
-│   └── conda_deps.sh      # Script to install dependencies via Conda.
-│
-├── util/                   # [Directory] Helper utilities.
-│   ├── __init__.py
-│   ├── html.py             # Generates HTML pages to display training results.
-│   ├── image_pool.py       # Implements a history buffer for stabilizing GAN training.
-│   ├── util.py             # General utility functions (e.g., tensor conversions).
-│   └── visualizer.py       # Handles logging of losses and displaying images (Visdom).
-│
-├── train.py                 # Entry point for training the model.
-├── test.py                  # Entry point for testing/inference.
-└── environment.yml          # Conda environment configuration file.
 
 ## Quick Start
 
